@@ -1,0 +1,16 @@
+# Visual Studio 垃圾文件
+*.pdb
+*.ilk
+*.exe
+*.obj
+*.log
+*.tlog
+.vs/
+
+# 编译输出目录
+x64/
+Debug/
+Release/
+*/x64/
+*/Debug/
+*/Release/
