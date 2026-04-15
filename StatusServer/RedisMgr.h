@@ -104,7 +104,7 @@ private:
 			try {
 				auto reply = (redisReply*)redisCommand(context, "PING");
 				if (!reply) {
-					std::cout << "redis ping failed" << std::endl;
+					std::cout << "reply is null, redis ping failed: " << std::endl;
 					connections_.push(context);
 					continue;
 				}
@@ -173,5 +173,5 @@ public:
 	}
 private:
 	RedisMgr();
-	std::unique_ptr<RedisConPool>  _con_pool;
+	unique_ptr<RedisConPool>  _con_pool;
 };

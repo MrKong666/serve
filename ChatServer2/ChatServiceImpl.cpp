@@ -7,6 +7,10 @@
 #include "RedisMgr.h"
 #include "MysqlMgr.h"
 
+ChatServiceImpl::ChatServiceImpl()
+{
+}
+
 Status ChatServiceImpl::NotifyAddFriend(ServerContext* context, const AddFriendReq* request, AddFriendRsp* reply)
 {
 	return Status();
