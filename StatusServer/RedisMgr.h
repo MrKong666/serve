@@ -173,5 +173,5 @@ public:
 	}
 private:
 	RedisMgr();
-	unique_ptr<RedisConPool>  _con_pool;
+	std::unique_ptr<RedisConPool>  _con_pool;
 };
